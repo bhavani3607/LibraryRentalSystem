@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Rental System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📚 Library Rental Management System</h1>
+
+    <div class="container">
+
+        <h2>Add Book</h2>
+        <input type="number" id="bookId" placeholder="Book ID">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="number" id="price" placeholder="Price">
+        <button onclick="addBook()">Add Book</button>
+
+        <h2>Search Book</h2>
+        <input type="text" id="searchValue" placeholder="Enter title or author">
+        <button onclick="searchBook()">Search</button>
+
+        <h2>Rent / Return</h2>
+        <input type="number" id="rentId" placeholder="Book ID">
+        <button onclick="rentBook()">Rent</button>
+        <button onclick="returnBook()">Return</button>
+
+        <h2>Library Records</h2>
+        <button onclick="showAvailable()">Show Available Books</button>
+        <button onclick="showRented()">Show Rented Books</button>
+
+        <div id="output"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
